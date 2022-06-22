@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<table class="table table-bordered table-hover">
+
+    <thead>
+
+        <tr>
+
+            <th>Id</th>
+
+            <th>Name</th>
+
+            <th>MobileNo</th>
+
+            <th>salary</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (mvcdemo.Models.Employee employee in ViewBag.Employeelist)
+
+        {
+
+        <tr>
+
+            <td>@employee.Id</td>
+
+            <td>@employee.Name</td>
+
+            <td>@employee.MobileNo</td>
+
+            <td>@employee.salary</td>
+
+        </tr>
+
+        }
+
+    </tbody>
+    </table>

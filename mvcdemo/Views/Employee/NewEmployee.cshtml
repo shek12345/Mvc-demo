@@ -1,0 +1,96 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>New Employee Data</h2>
+@using (Html.BeginForm())
+{
+    <div class="container">
+
+        <table class="table">
+
+            <tr>
+
+                <th>Id</th>
+
+                <td>
+
+                    @Html.TextBox("Id")  
+
+                </td>
+
+            </tr>
+            <tr>
+
+                <th>Name</th>
+
+                <td>
+
+                    @Html.TextBox("Name")  
+
+                </td>
+
+            </tr>
+
+
+
+
+               
+
+            
+
+            <tr>
+
+                <th>Mobile Number</th>
+
+                <td>
+
+                    @Html.TextBox("phone")
+
+                </td>
+
+            </tr>
+             <tr>
+
+                <th>Salary</th>
+
+                <td>
+
+                    @Html.TextBox("salary")
+
+                </td>
+
+            </tr>
+
+
+            
+           
+
+            <tr>
+
+                <th>Employee Designation</th>
+
+                <td>
+
+                    @Html.DropDownList("Options");
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td></td>
+
+                <td>
+
+                    <input type="submit" value="Submit" />
+
+                </td>
+
+            </tr>
+
+        </table>
+        </div>
+        }
